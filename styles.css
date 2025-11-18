@@ -1,0 +1,59 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #083047;
+}
+.hero {
+    background: linear-gradient(to bottom, #0c4a6e, #0a3a57);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+.logo {
+    width: 220px;
+    margin-bottom: 20px;
+}
+.btn {
+    background: #00a8a8;
+    padding: 12px 25px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.service-box {
+    background: #e8f5f7;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+}
+.booking {
+    background: #f3fbfd;
+    padding: 60px 20px;
+    text-align: center;
+}
+.booking-form {
+    max-width: 350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+footer {
+    background: #0c4a6e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
