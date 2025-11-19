@@ -1,77 +1,146 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Coastal Transportation</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; }
-    header { background: #006b86; color: white; padding: 20px; display: flex; align-items: center; gap: 20px; }
-    header img { height: 70px; }
-    .container { width: 90%; max-width: 900px; margin: 20px auto; }
-    .hero img { width: 100%; border-radius: 8px; }
-    .card { background: white; padding: 20px; border-radius: 12px; margin-top: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    h2 { color: #004c61; margin-bottom: 10px; }
-    input, textarea { width: 100%; padding: 10px; margin-top: 8px; border-radius: 6px; border: 1px solid #ccc; }
-    button { background: #006b86; color: white; padding: 10px 20px; border: none; border-radius: 6px; margin-top: 10px; cursor: pointer; }
-    button:hover { opacity: 0.9; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coastal Transportation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f7fb;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+        }
+
+        header img {
+            width: 200px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .keywords {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero-image img {
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+
+        .rates-box {
+            background: white;
+            width: 90%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        .rates-box h2 {
+            text-align: center;
+        }
+
+        .form-section {
+            background: white;
+            width: 90%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        form input, form textarea {
+            width: 95%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background: #0077b6;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            margin: 40px 0 20px;
+            color: #777;
+        }
+    </style>
 </head>
+
 <body>
 
-  <header>
-    <!-- Make sure this path matches the image in your repo -->
-    <img src="coastal-logo.png" alt="Logo" />
-    <h1>Coastal Transportation</h1>
-  </header>
+    <header>
+        <img src="coastal-logo.png" alt="Coastal Transportation Logo">
+        <h1>Coastal Transportation</h1>
+        <p class="tagline">Your Ride Along the Coast</p>
+        <p class="keywords">Reliable • Comfortable • Coastal</p>
+    </header>
 
-  <div class="container">
-    <!-- Vehicle / Hero Image -->
-    <div class="hero card">
-      <img src="car.jpg" alt="Mazda CX-5" />
+    <div class="hero-image">
+        <img src="mazda.jpg" alt="Mazda CX-5">
     </div>
 
-    <!-- Rates Section -->
-    <div class="card">
-      <h2>Rates</h2>
-      <p>Savannah Airport Transfer: <strong>$30</strong></p>
-      <p>Savannah Airport → Hilton Head Island: <strong>$110</strong></p>
-      <p>Hourly Rate: <strong>$50/hr</strong></p>
+    <div class="rates-box">
+        <h2>Rates</h2>
+        <p><strong>Brunswick to Portland Jetport:</strong> $110</p>
+        <p><strong>Bath to Portland Jetport:</strong> $120</p>
+        <p><strong>Topsham to Portland Jetport:</strong> $110</p>
+        <p><strong>Freeport to Portland Jetport:</strong> $80</p>
+        <p><strong>Brunswick to Midcoast Hospital:</strong> $20</p>
+        <p><strong>Hourly Rate (Local):</strong> $50/hr</p>
     </div>
 
-    <!-- Booking Form -->
-    <div class="card">
-      <h2>Online Booking</h2>
-      <form>
-        <label>Name</label>
-        <input type="text" placeholder="Full Name" required />
-        <label>Email</label>
-        <input type="email" placeholder="Email Address" required />
-        <label>Pickup Location</label>
-        <input type="text" placeholder="Pickup Location" required />
-        <label>Drop-off Location</label>
-        <input type="text" placeholder="Drop-off Location" required />
-        <label>Date & Time</label>
-        <input type="datetime-local" required />
-        <button type="submit">Book Now</button>
-      </form>
+    <div class="form-section">
+        <h2>Online Booking</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Pickup Location" required>
+            <input type="text" placeholder="Dropoff Location" required>
+            <input type="datetime-local" required>
+            <button type="submit">Submit Booking</button>
+        </form>
     </div>
 
-    <!-- Contact Us Form -->
-    <div class="card">
-      <h2>Contact Us</h2>
-      <form>
-        <label>Name</label>
-        <input type="text" placeholder="Your Name" required />
-        <label>Email</label>
-        <input type="email" placeholder="Your Email" required />
-        <label>Message</label>
-        <textarea rows="4" placeholder="Your message..." required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+    <div class="form-section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </div>
-  </div>
+
+    <footer>
+        © 2025 Coastal Transportation
+    </footer>
 
 </body>
 </html>
