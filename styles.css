@@ -1,59 +1,97 @@
-
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: #083047;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f8fa;
 }
-.hero {
-    background: linear-gradient(to bottom, #0c4a6e, #0a3a57);
+
+header.header {
+    background: #006784;
     color: white;
-    text-align: center;
-    padding: 80px 20px;
-}
-.logo {
-    width: 220px;
-    margin-bottom: 20px;
-}
-.btn {
-    background: #00a8a8;
-    padding: 12px 25px;
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-.services {
-    padding: 50px 20px;
-    text-align: center;
-}
-.service-container {
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
+    align-items: center;
+    gap: 20px;
 }
-.service-box {
-    background: #e8f5f7;
-    padding: 25px;
-    width: 250px;
+
+.logo {
+    height: 80px;
+}
+
+.title-group h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.tagline {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-img {
+    width: 90%;
+    max-width: 900px;
     border-radius: 10px;
 }
-.booking {
-    background: #f3fbfd;
-    padding: 60px 20px;
-    text-align: center;
+
+section {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
 }
-.booking-form {
-    max-width: 350px;
-    margin: auto;
+
+h2 {
+    color: #004e5f;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.card p {
+    font-size: 18px;
+}
+
+.card hr {
+    margin: 12px 0;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Forms */
+form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
 }
-footer {
-    background: #0c4a6e;
+
+input, textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background: #006784;
     color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #004e5f;
 }
