@@ -1,53 +1,77 @@
-
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coastal Transportation</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coastal Transportation</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; }
+    header { background: #006b86; color: white; padding: 20px; display: flex; align-items: center; gap: 20px; }
+    header img { height: 70px; }
+    .container { width: 90%; max-width: 900px; margin: 20px auto; }
+    .hero img { width: 100%; border-radius: 8px; }
+    .card { background: white; padding: 20px; border-radius: 12px; margin-top: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    h2 { color: #004c61; margin-bottom: 10px; }
+    input, textarea { width: 100%; padding: 10px; margin-top: 8px; border-radius: 6px; border: 1px solid #ccc; }
+    button { background: #006b86; color: white; padding: 10px 20px; border: none; border-radius: 6px; margin-top: 10px; cursor: pointer; }
+    button:hover { opacity: 0.9; }
+  </style>
 </head>
-
 <body>
-<header class="hero">
-    <img src="coastal-logo.png" class="logo" alt="Coastal Transportation Logo">
-    <h1>Reliable. Comfortable. Coastal.</h1>
-    <p>Your trusted transportation service along the coast—fast, safe, and professional.</p>
-    <a href="#booking" class="btn">Book a Ride</a>
-</header>
 
-<section class="services">
-    <h2>Our Services</h2>
-    <div class="service-container">
-        <div class="service-box">
-            <h3>Airport Transfers</h3>
-            <p>On-time pickups and stress-free travel to all major airports.</p>
-        </div>
-        <div class="service-box">
-            <h3>Corporate Transport</h3>
-            <p>Professional travel solutions for business clients and events.</p>
-        </div>
-        <div class="service-box">
-            <h3>Coastal Tours</h3>
-            <p>Relax and explore the coastline with our scenic tour services.</p>
-        </div>
+  <header>
+    <!-- Make sure this path matches the image in your repo -->
+    <img src="coastal-logo.png" alt="Logo" />
+    <h1>Coastal Transportation</h1>
+  </header>
+
+  <div class="container">
+    <!-- Vehicle / Hero Image -->
+    <div class="hero card">
+      <img src="car.jpg" alt="Mazda CX-5" />
     </div>
-</section>
 
-<section id="booking" class="booking">
-    <h2>Book Your Ride</h2>
-    <form class="booking-form">
-        <input type="text" placeholder="Full Name" required>
-        <input type="text" placeholder="Pickup Location" required>
-        <input type="text" placeholder="Destination" required>
-        <input type="datetime-local" required>
-        <button type="submit">Submit</button>
-    </form>
-</section>
+    <!-- Rates Section -->
+    <div class="card">
+      <h2>Rates</h2>
+      <p>Savannah Airport Transfer: <strong>$30</strong></p>
+      <p>Savannah Airport → Hilton Head Island: <strong>$110</strong></p>
+      <p>Hourly Rate: <strong>$50/hr</strong></p>
+    </div>
 
-<footer>
-    <p>© 2025 Coastal Transportation. All rights reserved.</p>
-</footer>
+    <!-- Booking Form -->
+    <div class="card">
+      <h2>Online Booking</h2>
+      <form>
+        <label>Name</label>
+        <input type="text" placeholder="Full Name" required />
+        <label>Email</label>
+        <input type="email" placeholder="Email Address" required />
+        <label>Pickup Location</label>
+        <input type="text" placeholder="Pickup Location" required />
+        <label>Drop-off Location</label>
+        <input type="text" placeholder="Drop-off Location" required />
+        <label>Date & Time</label>
+        <input type="datetime-local" required />
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+
+    <!-- Contact Us Form -->
+    <div class="card">
+      <h2>Contact Us</h2>
+      <form>
+        <label>Name</label>
+        <input type="text" placeholder="Your Name" required />
+        <label>Email</label>
+        <input type="email" placeholder="Your Email" required />
+        <label>Message</label>
+        <textarea rows="4" placeholder="Your message..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
 
 </body>
 </html>
